@@ -1,0 +1,103 @@
+.rum-grid{
+    display: grid;
+    gap: 4rem;
+    
+}
+@media (max-width:500px) {
+
+}
+@media (min-width:500px) {
+    .rum-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width:800px) {
+    .rum-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.drink-rum{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    margin: 0 auto;
+}
+.drink-rum .contenido{
+    padding: 1rem;
+
+}
+.drink-rum .contenido h3{
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: var(--primary);
+}
+/* cut text with css */
+/* .drink-rum .presentation{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    font-size: 1.8rem
+} */
+.drink-rum .presentation{
+    font-size: 3rem;
+    margin: 0;
+}
+.drink-rum .price{
+    /* color: var(--secondary); */
+    font-size: 3rem;
+    margin: 0;
+}
+.drink-rum .link-rum{
+    margin-top: 2rem;
+    display: block;
+    background-color: var(--black);
+    color: var(--white);
+    text-decoration: none;
+    padding: .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 900;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+.drink-rum .link-rum:hover{
+    background-color: var(--primary);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+
+}
+.form label{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.form select {
+    text-align: center;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    padding: 0.5rem;
+
+}
+.form input[type='submit']{
+    margin-top: 3rem;
+    background-color: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 1.4rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    border: none;
+    transition-property: background-color ease;
+    transition-duration: 300ms;
+}
+.form input[type='submit']:hover{
+    cursor: pointer;
+    background-color: var(--primary);
+}

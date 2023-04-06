@@ -1,0 +1,24 @@
+.drink{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.drink .contenido h3{
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: var(--primary);
+}
+.drink .presentation{
+    font-size: 3rem;
+    margin: 0;
+}
+
+.drink .price{
+    /* color: var(--secondary); */
+    font-size: 3rem;
+    margin: 0;
+}
