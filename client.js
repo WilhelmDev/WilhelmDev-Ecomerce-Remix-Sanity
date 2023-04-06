@@ -2,7 +2,7 @@ import {createClient} from '@sanity/client'
 import imageUrlBuilder from '@sanity/image-url'
 
 export default client = createClient({
-    projectId: 'ekcrvks3',
+    projectId: process.env.CLIENT_ID,
     dataset: 'production',
     useCdn: false,
     token: process.env.CLIENT_TOKEN,
